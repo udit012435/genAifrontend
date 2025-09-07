@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+    background-image: linear-gradient(rgb(83, 229, 255), rgb(101, 147, 255),rgb(176, 136, 255) );
+   min-height: 92vh;
+   
+}
+.genAi{
+   padding-top: 5vh;
+   color: white; /* Makes the text readable on blue */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.genAi h1{
+  font-weight: 900;
+  font-family: serif; 
+  font-size:7rem;
+}
+.para{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#btn{
+  width: 15rem;
+  height: 4rem;
+  margin-top: 5rem;
+  border-radius: 50px;
+  background-color: blue;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#btn:hover{
+  /* background-color: rgb(0, 0, 221); */
+  transform: scale(1.05);
+}
+.navbar-brand img{
+  margin-top: -30px;
+  margin-bottom: -30px;
+  margin-left: -17px;
+  padding: 0 !important;
+  height: 15vh;
+}
+/* chatbox css */
+.container{
+  margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Chatbox{
+  background-color: rgb(210, 210, 210);
+  border-radius: 25px;
+  width: 55vh;
+  padding: 10px 20px;
+  position: relative;
+}
+#chatInput{
+  border: none;
+  width: 40vh;
+  background: none;
+ 
+}
+#chatInput:focus{
+  outline: none;
+}
+#chatbtn{
+  background: none;
+  border: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+}
+#chatbtn:hover{
+  background-color: rgb(172, 172, 172);
+  /* color: white; */
+  border-radius: 60px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .genAi {
+    padding-top: 3vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .genAi h1{
+    font-weight: 700;
+    font-size:40px;
+  }
+
+  .para {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  #btn {
+    width: 80%;
+    max-width: 12rem;
+    height: 3.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #btn {
+    width: 80%;
+    max-width: none;
+    font-size: 0.85rem;
+    height: 3rem;
+  }
+}
